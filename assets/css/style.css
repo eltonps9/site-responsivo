@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/*header */
+
+header {
+    width: 100vw;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+header .logototal {
+    width: 100vw;
+    height: 80px;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+}
+
+header .logo {
+    display: flex;
+    margin: 0px 80px;
+    width: 100px;
+    height: 30px;
+    border: 3px solid #fff;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+header .home {
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+}
+
+header .home ul {
+    margin: 0;
+    padding: 0;
+}
+
+header .home ul li {
+    height: 30px;
+    display: inline-flex;
+}
+
+header .home ul li a {
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 10px;
+    padding: 0;
+}
+
+header .home ul li.menu--home {
+    background-color: #4e83d8;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+header .home ul li:hover {
+    background-color: #4a83d8;
+}
+
+header .MENU--2 {
+    display: none;
+    width: 45px;
+    height: 40px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+header .MENU--2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 3px;
+    margin: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+header .MENU--2 div.a {
+    width: 15px;
+}
+
+header .MENU--2 div.b {
+    width: 20px;
+}
+
+
+/*main*/
+
+main {
+    background-image: url('../images/lobo.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+main .total {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .total h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+main .total .sub-total {
+    width: 60vw;
+    height: 20vh;
+}
+
+main .total .sub-total h4 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main .total .sub-total p {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+main .total .sub-total a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 3px solid #4a83d8;
+    width: 130px;
+    height: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main .total .sub-total h1 strong {
+    color: #4a83d8;
+}
+
+main .arqui {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+main .footer {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+}
+
+main .footer .tela {
+    width: 25vw;
+    height: 30vh;
+}
+
+main .footer .tela .img {
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .footer .tela img {
+    height: 60px;
+    width: 60px;
+}
+
+main .footer .tela .frase {
+    height: 17vh;
+    width: 25vw;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+main .footer .tela .frase p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+
+main .footer .tela.oi {
+    background-color: #4a83d8;
+}
+
+main .footer .tela.ola {
+    background-color: #4a83d891;
+}
+
+@media (max-width: 510px) {
+    main .total .sub-total h4 {
+        display: none;
+    }
+}
+
+@media (max-width: 910px) {
+    header .MENU--2 {
+        display: block;
+    }
+    header .home {
+        display: none;
+    }
+}
+
+@media (max-width: 660px) {
+    main .footer {
+        width: 100vw;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .footer .tela.oi .frase {
+        display: none;
+    }
+    main .footer .tela.ola .frase {
+        display: none;
+    }
+    main .footer .tela.oi {
+        width: 60vw;
+        height: 60px;
+        border-radius: 30px;
+    }
+    main .footer .tela {
+        width: 60vw;
+        height: 60px;
+        border-radius: 30px;
+    }
+    main .total .sub-total a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        border: 3px solid #4a83d8;
+        height: 30px;
+        width: 90vh;
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    main .footer .tela.ola {
+        width: 60vw;
+        height: 60px;
+        margin: 15px 0;
+        border-radius: 30px;
+    }
+    main .footer .tela .img {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    main .total {
+        height: 55vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:1130px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    main .total {
+        flex-direction: column;
+    }
+    main .total .sub-total p {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    main .total .sub-total a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        border: 3px solid #4a83d8;
+        height: 30px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    main .footer .tela.oi .frase {
+        display: none;
+    }
+    main .footer .tela.ola .frase {
+        display: none;
+    }
+    main .footer .tela .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .footer {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+    }
+    main .footer .tela {
+        width: 25vw;
+        height: 30vh;
+    }
+    main .footer .tela img {
+        height: 60px;
+        width: 60px;
+    }
+    main .footer .tela .img {
+        height: 100%;
+    }
+}
+
+@media (max-width:520px) {
+    main .total .sub-total h1 {
+        flex-wrap: wrap;
+        font-size: 35px;
+    }
+    main .total .sub-total h4 {
+        flex-wrap: wrap;
+    }
+}
